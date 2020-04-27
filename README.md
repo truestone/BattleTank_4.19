@@ -7,3 +7,4 @@
 * BT186. A Landscaping Process (실습 3: 랜드스케이핑 작업)
 * BT188. Using Landscape Layers (실습 4: 랜드스케이프 레이어)
 * BT189. Flat Shading Low Poly Landscapes (실습 5: 로우 폴리곤 플랫 셰이딩)
+* BT190. More Landscaping Tools (실습 6: 보다 사실적인 랜드스케이프)

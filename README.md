@@ -11,3 +11,4 @@
 * BT192. Actors from Multiple Meshes (실습 7: 외부 메쉬로 액터 생성)
 * BT194. Configuring a Tank (실습 8: 탱크 설정)
 * BT195. 3rd Person Camera Control (실습 9: 3인칭 카메라)
+* BT196. Fixing 3rd Person Camera Rottion (실습 10: 카메라 회전 문제)

@@ -9,4 +9,5 @@
 * BT189. Flat Shading Low Poly Landscapes (실습 5: 로우 폴리곤 플랫 셰이딩)
 * BT190. More Landscaping Tools (실습 6: 보다 사실적인 랜드스케이프)
 * BT192. Actors from Multiple Meshes (실습 7: 외부 메쉬로 액터 생성)
-* BT194. Configuring a Tank (실습 8: )
+* BT194. Configuring a Tank (실습 8: 탱크 설정)
+* BT195. 3rd Person Camera Control (실습 9: 3인칭 카메라)

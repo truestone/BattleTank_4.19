@@ -15,3 +15,6 @@
 * BT197. User Interface (UI) in Unreal (실습 11: 사용자 인터페이스 (UI))
 * BT198. Main Menu Screens (실습 12: 메인 메뉴)
 * BT199. UI Scale Box, Buttons & Mouse (실습 13: 마우스 커서, 스케일 박스, 버튼)
+* BT200. Controller Ready Navigation (실습 14: 레벨 전환과 입력 모드)
+
+

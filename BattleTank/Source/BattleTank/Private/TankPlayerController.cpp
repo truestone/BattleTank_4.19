@@ -10,7 +10,6 @@ ATank* ATankPlayerController::GetControlledTank() const
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
-
 	auto ControlledTank = GetControlledTank();
 	if (!ControlledTank)
 	{

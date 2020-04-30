@@ -25,3 +25,4 @@
 * BT211. Finding Screen Pixel Coordinates (실습 21: 스크린 좌표)
 * BT212. Using DeprojectScreenToWorld (실습 22: 역투영)
 * BT213. Using LineTracerSingleByChannel() (실습 23: 라인 트레이싱)
+* BT214. Unify Player & AI Aiming (실습 24: AimAt 함수로 통일)

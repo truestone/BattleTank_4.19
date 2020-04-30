@@ -27,3 +27,4 @@
 * BT213. Using LineTracerSingleByChannel() (실습 23: 라인 트레이싱)
 * BT214. Unify Player & AI Aiming (실습 24: AimAt 함수로 통일)
 * BT215. Create Default Sub Objects in C++ (실습 25: C++에서 컴포넌트 생성)
+* BT216. BlueprintCallable() (실습 26: 블루프린트에서 C++ 함수 호출)

@@ -20,4 +20,4 @@
 * BT204. Using virtual and override (실습 16: 가상함수와 오버라이딩)
 * BT207. Creating an AI Controller Class (실습 17: AI 컨트롤러 만들기)
 * BT208. Get the Player Controller with C++ (실습 18: 플레이어 탱크 찾기)
-
+* BT209. Add Tick() to PlayerController (실습 19: Tick 함수)

@@ -21,3 +21,15 @@ void ATankPlayerController::BeginPlay()
 			*ControlledTank->GetName());
 	}
 }
+
+void ATankPlayerController::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    AimTowardsCrosshaire();
+}
+
+void ATankPlayerController::AimTowardsCrosshaire()
+{
+    if (!GetControlledTank()) { return; }
+}

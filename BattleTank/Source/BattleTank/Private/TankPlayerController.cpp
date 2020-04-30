@@ -32,4 +32,16 @@ void ATankPlayerController::Tick(float DeltaTime)
 void ATankPlayerController::AimTowardsCrosshaire()
 {
     if (!GetControlledTank()) { return; }
+
+    FVector HitLocation;
+    if (GetSightRayHitLocation(HitLocation))
+    {
+        UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
+    }
+}
+
+bool ATankPlayerController::GetSightRayHitLocation(FVector & OutHitLocation) const
+{
+    OutHitLocation = FVector(1.0f);
+    return true;
 }

@@ -22,7 +22,7 @@ public:
 
     virtual void Tick(float DeltaTime) override;
 
-    void AimTowardsCrosshaire();
+    void AimTowardsCrosshair();
 
     bool GetSightRayHitLocation(FVector& OutHitLocation) const;
 
@@ -32,4 +32,6 @@ private:
 
     UPROPERTY(EditAnywhere)
     float CrosshairYLocation = 0.33333f;
+
+    bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
 };

@@ -34,3 +34,4 @@
 * BT221. Using Forward Declarations (실습 30: 탱크 배럴 클래스)
 * BT222. BlueprintSpawnableComponent() (실습 31: 배럴 컴포넌트 교체)
 * BT223. Review Our Execution Flow (실습 32: 실행 순서 확인 및 정리)
+* BT224. How to Report Bugs (실습 32: 실행 순서 확인 및 정리) 수정

@@ -30,4 +30,5 @@
 * BT216. BlueprintCallable() (실습 26: 블루프린트에서 C++ 함수 호출)
 * BT217. SuggestProjectileVelocity() (실습 27: 발사체 속도)
 * BT218. Predict Projectile Landing Point (실습 28: 발사 방향 계산)
-* BT219. Using FRotators in Unreal (실습 29: 배럴의 회전 각도 계산)
+* BT219. Using FRotators in Unreal (실습 29: 배럴의 회전 각도 계산) 
+* BT2201. Using Forward Declarations (실습 30: 탱크 배럴 클래스)

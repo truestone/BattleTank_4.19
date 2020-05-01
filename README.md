@@ -29,3 +29,4 @@
 * BT215. Create Default Sub Objects in C++ (실습 25: C++에서 컴포넌트 생성)
 * BT216. BlueprintCallable() (실습 26: 블루프린트에서 C++ 함수 호출)
 * BT217. SuggestProjectileVelocity() (실습 27: 발사체 속도)
+* BT218. Predict Projectile Landing Point (실습 28: 발사 방향 계산)

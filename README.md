@@ -31,4 +31,5 @@
 * BT217. SuggestProjectileVelocity() (실습 27: 발사체 속도)
 * BT218. Predict Projectile Landing Point (실습 28: 발사 방향 계산)
 * BT219. Using FRotators in Unreal (실습 29: 배럴의 회전 각도 계산) 
-* BT2201. Using Forward Declarations (실습 30: 탱크 배럴 클래스)
+* BT221. Using Forward Declarations (실습 30: 탱크 배럴 클래스)
+* BT222. BlueprintSpawnableComponent() (실습 31: 배럴 컴포넌트 교체)

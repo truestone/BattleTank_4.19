@@ -38,3 +38,4 @@
 * BT225. Using Clamp() to Limit Values (실습 33: 배럴 회전)
 * BT226. CHALLENGE - Turret Rotation (실습 34: 터렛 회전)
 * BT227. CHALLENGE - Turret Rotation Pt.2 (실습 35: 터렛 회전 2)
+* BT228. Setting Up Projectils (실습 36: 발사 준비)

@@ -40,5 +40,6 @@
 * BT227. CHALLENGE - Turret Rotation Pt.2 (실습 35: 터렛 회전 2)
 * BT228. Setting Up Projectils (실습 36: 발사 준비)
 * BT232. Using SpawnActor<>() to Spawn (실습 37: 발사체 스폰)
+* BT233. Projectile Movement Component (실습 38: 발사체 이동)
 
 

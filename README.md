@@ -36,3 +36,5 @@
 * BT223. Review Our Execution Flow (실습 32: 실행 순서 확인 및 정리)
 * BT224. How to Report Bugs (실습 32: 실행 순서 확인 및 정리) 수정
 * BT225. Using Clamp() to Limit Values (실습 33: 배럴 회전)
+* BT226. CHALLENGE - Turret Rotation (실습 34: 터렛 회전)
+

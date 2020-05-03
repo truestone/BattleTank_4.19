@@ -45,3 +45,5 @@
 * BT235. EditAnywhere vs EditDefaultsOnly
 * BT236. Adding a Quit Button (실습 40: 콜리젼과 종료 버튼)
 * BT237. Setup Track Throttles (실습 41: 트랙 클래스)
+* BT238. ApplyForceAtLocation() in Action (실습 42: 힘 계산)
+

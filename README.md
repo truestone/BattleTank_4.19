@@ -42,5 +42,6 @@
 * BT232. Using SpawnActor<>() to Spawn (실습 37: 발사체 스폰)
 * BT233. Projectile Movement Component (실습 38: 발사체 이동)
 * BT234. Making AI Tanks Fire (실습 39: AI 탱크의 발사)
+* BT235. EditAnywhere vs EditDefaultsOnly
 
 

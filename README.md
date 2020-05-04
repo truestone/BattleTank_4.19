@@ -48,4 +48,5 @@
 * BT238. ApplyForceAtLocation() in Action (실습 42: 힘 계산)
 * BT239. Physics Materials & Friction (힘 계산 오류 수정)
 * BT241. Using BlueprintReadOnly (실습 43: 플라이 바이 와이어 시스템)
-* BT242. A Better Component Architecture (실습 44: )
+* BT242. A Better Component Architecture (실습 44: TankMovementComponent 수정)
+* BT243. Completing Manual Tank Movement (실습 45: 탱크 움직임 완성)

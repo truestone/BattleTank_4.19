@@ -13,7 +13,7 @@ void ATankAIController::Tick(float DeltaSeconds)
     if (PlayerTank)
     {
         ControlledTank->AimAt(PlayerTank->GetActorLocation());
-        ControlledTank->Fire(); // TODO limit fireing rate
+        // ControlledTank->Fire();
     }
 }
 

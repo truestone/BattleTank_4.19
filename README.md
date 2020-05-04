@@ -46,4 +46,5 @@
 * BT236. Adding a Quit Button (실습 40: 콜리젼과 종료 버튼)
 * BT237. Setup Track Throttles (실습 41: 트랙 클래스)
 * BT238. ApplyForceAtLocation() in Action (실습 42: 힘 계산)
-
+* BT239. Physics Materials & Friction (힘 계산 오류 수정)
+* BT241. Using BlueprintReadOnly (실습 43: 플라이 바이 와이어 시스템)

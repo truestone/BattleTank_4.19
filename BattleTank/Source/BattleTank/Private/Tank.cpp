@@ -2,6 +2,7 @@
 
 #include "Tank.h"
 #include "TankAimingComponent.h"
+#include "TankMovementComponent.h"
 #include "TankBarrel.h"
 #include "Projectile.h"
 #include "Engine/World.h"
@@ -12,6 +13,7 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 
     TankAimingComponent = CreateDefaultSubobject<UTankAimingComponent>(FName("Aiming Component"));
+    TankMovementComponent = CreateDefaultSubobject<UTankMovementComponent>(FName("Movement Component"));
 }
 
 // Called when the game starts or when spawned
@@ -43,6 +45,11 @@ void ATank::Fire()
             ProjectileBlueprint,
             Barrel->GetSocketLocation(FName("Projectile")),
             Barrel->GetSocketRotation(FName("Proejctile")));
+
+        if (!Projectile) {
+            UE_LOG(LogTemp, Error, TEXT("Projectile Blueprint is None!"));
+            return;
+        }
 
         Projectile->LaunchProjectile(LaunchSpeed);
         LastFireTime = FPlatformTime::Seconds();

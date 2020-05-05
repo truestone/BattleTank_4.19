@@ -51,3 +51,4 @@
 * BT242. A Better Component Architecture (실습 44: TankMovementComponent 수정)
 * BT243. Completing Manual Tank Movement (실습 45: 탱크 움직임 완성)
 * BT244. Introducing AI Pathfinding (실습 46: AI 길찾기)
+* BT245. Dissecting RequestDirectMove() (실습 47: AI 길찾기)

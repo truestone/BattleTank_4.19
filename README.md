@@ -54,3 +54,4 @@
 * BT245. Dissecting RequestDirectMove() (실습 46: AI 길찾기)
 * BT246. DotProduct() Vector Operator (실습 47: 벡터의 내적)
 * BT247. CrossProduct() Vector Operator (실습 47: 벡터의 내적과 외적)
+* BT249. How to Use Blueprint Variables (실습 48: 블루프린트에서의 변수)

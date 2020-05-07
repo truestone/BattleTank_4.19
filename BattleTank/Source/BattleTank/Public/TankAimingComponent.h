@@ -37,11 +37,14 @@ protected:
 
 public:	
 
-    void AimAt(FVector WorldSpaceAim, float LaunchSpeed);
+    void AimAt(FVector WorldSpaceAim);
 
 protected:
     UPROPERTY(BlueprintReadOnly, Category = "State")
     EFiringState FiringState = EFiringState::Aiming;
+
+    UPROPERTY(EditDefaultsOnly, Category = "Firing")
+    float LaunchSpeed = 4000;
 
 private:
     void MoveBarrelTowards(FVector AimDirection);

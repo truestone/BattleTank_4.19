@@ -31,7 +31,7 @@ void UTankAimingComponent::BeginPlay()
 }
 
 
-void UTankAimingComponent::AimAt(FVector WorldSpaceAim, float LaunchSpeed)
+void UTankAimingComponent::AimAt(FVector WorldSpaceAim)
 {
     if (!Barrel) return;
 

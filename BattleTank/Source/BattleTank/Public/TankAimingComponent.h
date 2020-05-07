@@ -27,6 +27,10 @@ public:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 
+    UFUNCTION(BlueprintCallable, Category = Setup)
+    void Initialise(UTankBarrel* BarrelToSet, UTankTurret* TurretToSet);
+
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -34,9 +38,6 @@ protected:
 public:	
 
     void AimAt(FVector WorldSpaceAim, float LaunchSpeed);
-
-    void SetBarrelReference(UTankBarrel* BarrelToSet);
-    void SetTurretReference(UTankTurret* BarrelToSet);
 
 protected:
     UPROPERTY(BlueprintReadOnly, Category = "State")

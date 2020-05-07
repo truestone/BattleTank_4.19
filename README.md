@@ -56,3 +56,4 @@
 * BT247. CrossProduct() Vector Operator (실습 47: 벡터의 내적과 외적)
 * BT249. How to Use Blueprint Variables (실습 48: 블루프린트에서의 변수)
 * BT250. Using Enum(ermation) in UE4 (실습 49: 언리얼엔진에서의 열거형)
+* BT251. Refactoring our Aiming Component (실습 50: AimingComponent 리팩토링)

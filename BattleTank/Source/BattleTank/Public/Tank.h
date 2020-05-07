@@ -23,12 +23,6 @@ public:
     UFUNCTION(BlueprintCallable, Category = Firing)
     void Fire();
 
-    UFUNCTION(BlueprintCallable, Category = Setup)
-    void SetBarrelReference(UTankBarrel* BarrelToSet);
-
-    UFUNCTION(BlueprintCallable, Category = Setup)
-    void SetTurretReference(UTankTurret* TurretToSet);
-
 protected:
     UPROPERTY(BlueprintReadOnly)
     UTankAimingComponent* TankAimingComponent = nullptr;
@@ -38,10 +32,6 @@ protected:
 
 private:
 	ATank();
-
-	virtual void BeginPlay() override;
-
-    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
     
     UPROPERTY(EditDefaultsOnly, Category = Firing)
     float LaunchSpeed = 4000;  // 1000 m/s

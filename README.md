@@ -61,3 +61,4 @@
 * BT253. Constructor & Begin Play Timing (실습 50: AimingComponent 리팩토링)
 * BT255. BlueprintImplementableEvent (실습 50: AimingComponent 리팩토링)
 * BT259. Starting From Green (실습 51: 조준 메커니즘 리팩토링)
+* BT260. Aiming Without the Tank (실습 51: 조준 메커니즘 리팩토링)

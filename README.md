@@ -59,4 +59,5 @@
 * BT251. Refactoring our Aiming Component (실습 50: AimingComponent 리팩토링)
 * BT252. Attaching a Debugger to Unreal (실습 50: AimingComponent 리팩토링)
 * BT253. Constructor & Begin Play Timing (실습 50: AimingComponent 리팩토링)
-* BT254. BlueprintImplementableEvent (실습 50: AimingComponent 리팩토링)
+* BT255. BlueprintImplementableEvent (실습 50: AimingComponent 리팩토링)
+* BT259. Starting From Green (실습 51: 조준 메커니즘 리팩토링)

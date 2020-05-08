@@ -63,3 +63,4 @@
 * BT259. Starting From Green (실습 51: 조준 메커니즘 리팩토링)
 * BT260. Aiming Without the Tank (실습 51: 조준 메커니즘 리팩토링)
 * BT261. Fisnishing our Refactoring (실습 52: 리팩토링 마무리)
+* BT262. Adding TickComponent() Back (실습 53: FiringState 구현)

@@ -10,27 +10,34 @@
 // Sets default values for this component's properties
 UTankAimingComponent::UTankAimingComponent()
 {
-	PrimaryComponentTick.bCanEverTick = false;
+	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
 }
 
+// Called when the game starts
+void UTankAimingComponent::BeginPlay()
+{
+    Super::BeginPlay();
+
+    LastFireTime = FPlatformTime::Seconds();
+}
+
+void UTankAimingComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction * ThisTickFunction)
+{
+    Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+    if ((FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds)
+    {
+        FiringState = EFiringState::Aiming;
+    }
+}
 
 void UTankAimingComponent::Initialise(UTankBarrel * BarrelToSet, UTankTurret * TurretToSet)
 {
     Barrel = BarrelToSet;
     Turret = TurretToSet;
 }
-
-// Called when the game starts
-void UTankAimingComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
-}
-
 
 void UTankAimingComponent::AimAt(FVector WorldSpaceAim)
 {
@@ -71,16 +78,16 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 
 void UTankAimingComponent::Fire()
 {
-    bool isReloaded = (FPlatformTime::Seconds() - LastFireTime) > ReloadTimeInSeconds;
-
-    if (ensure(Barrel) && isReloaded)
+    if (FiringState != EFiringState::Reloading)
     {
+        if (!ensure(Barrel)) return;
+
         auto Projectile = GetWorld()->SpawnActor<AProjectile>(
             ProjectileBlueprint,
             Barrel->GetSocketLocation(FName("Projectile")),
             Barrel->GetSocketRotation(FName("Proejctile")));
 
-        if (!Projectile) {
+        if (!ensure(Projectile)) {
             UE_LOG(LogTemp, Error, TEXT("Projectile Blueprint is None!"));
             return;
         }

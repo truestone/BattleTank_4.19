@@ -67,3 +67,4 @@
 * BT263. Are Two Floats Equal? (실습 53: FiringState 구현)
 * BT264. Programmatic Sideways Friction (실습 54: 회전 마찰력 조정)
 * BT265. OnComponentHit Event in 4.12 (실습 55: 바닥과의 충돌)
+* BT266. Avoiding Boolean Flags (실습 55: 바닥과의 충돌)

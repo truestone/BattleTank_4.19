@@ -65,4 +65,5 @@
 * BT261. Fisnishing our Refactoring (실습 52: 리팩토링 마무리)
 * BT262. Adding TickComponent() Back (실습 53: FiringState 구현)
 * BT263. Are Two Floats Equal? (실습 53: FiringState 구현)
-* BT264. Programmatic Sideways Friction (실슴 54: 회전 마찰력 조정)
+* BT264. Programmatic Sideways Friction (실습 54: 회전 마찰력 조정)
+* BT265. OnComponentHit Event in 4.12 (실습 55: 바닥과의 충돌)

@@ -20,4 +20,8 @@ public:
 
     UPROPERTY(EditDefaultsOnly, Category = Setup)
     float TrackMaxDrivingForce = 40000000;
+
+private:
+    UTankTrack();
+    virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction * ThisTickFunction) override;
 };

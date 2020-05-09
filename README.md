@@ -72,5 +72,5 @@
 * BT268. Tweaking Tank AI (실습 56: AI 수정)
 * BT269. Making an Ammo Display (실습 57: 탄환 수 표시)
 * BT270. Making an AutoMortar (실습 58: 포탑 만들기)
-
+* BT273. Preparing for Particles (실습 59: 발사체 수정)
 

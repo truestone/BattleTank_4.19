@@ -80,6 +80,11 @@ void UTankAimingComponent::AimAt(FVector WorldSpaceAim)
     }
 }
 
+EFiringState UTankAimingComponent::GetFiringState() const
+{
+    return FiringState;
+}
+
 void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
 {
     auto BarrelRotator = Barrel->GetForwardVector().Rotation();

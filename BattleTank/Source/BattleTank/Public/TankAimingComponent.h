@@ -41,8 +41,8 @@ protected:
 	virtual void BeginPlay() override;
 
 public:	
-
     void AimAt(FVector WorldSpaceAim);
+    EFiringState GetFiringState() const;
 
 protected:
     UPROPERTY(BlueprintReadOnly, Category = "State")

@@ -69,3 +69,4 @@
 * BT265. OnComponentHit Event in 4.12 (실습 55: 바닥과의 충돌)
 * BT266. Avoiding Boolean Flags (실습 55: 바닥과의 충돌)
 * BT267. Improving Tank Aiming (실습 35: 터렛 회전 2 - 오류 수정)
+* BT258. Tweaking Tank AI (실습 56: AI 수정)

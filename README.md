@@ -71,3 +71,6 @@
 * BT267. Improving Tank Aiming (실습 35: 터렛 회전 2 - 오류 수정)
 * BT268. Tweaking Tank AI (실습 56: AI 수정)
 * BT269. Making an Ammo Display (실습 57: 탄환 수 표시)
+* BT270. Making an AutoMortar (실습 58: 포탑 만들기)
+
+

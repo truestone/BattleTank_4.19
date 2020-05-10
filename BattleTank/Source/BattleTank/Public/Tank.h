@@ -11,9 +11,20 @@ class BATTLETANK_API ATank : public APawn
 {
     GENERATED_BODY()
 
+public:
+    virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent,
+        class AController * EventInstigator, AActor * DamageCauser);
+
 protected:
     virtual void BeginPlay() override;
 
 private:
 	ATank();
+
+private:
+    UPROPERTY(EditDefaultsOnly, Category = "Setup")
+    int32 StaringHealth = 100;
+
+    UPROPERTY(VisibleAnywhere, Category = "Health")
+    int32 CurrentHealth = StaringHealth;
 };

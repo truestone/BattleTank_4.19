@@ -5,6 +5,7 @@
 #include "Particles/ParticleSystemComponent.h"
 #include "Engine/World.h"
 #include "TimerManager.h"
+#include "Kismet/GameplayStatics.h"
 
 AProjectile::AProjectile()
 {
@@ -47,6 +48,8 @@ void AProjectile::OnHit(UPrimitiveComponent * HitComponent, AActor * OtherActor,
     SetRootComponent(ImpactBlast);
     CollisionMesh->DestroyComponent();
 
+    UGameplayStatics::ApplyRadialDamage(this, ProjectileDamage, GetActorLocation(), ExplosionForce->Radius, UDamageType::StaticClass(), TArray<AActor*>());
+
     FTimerHandle Timer;
     GetWorld()->GetTimerManager().SetTimer(Timer, this, &AProjectile::OnTimerExpire, DestroyDelay, false);
 }
@@ -66,7 +69,6 @@ void AProjectile::Tick(float DeltaTime)
 void AProjectile::LaunchProjectile(float Speed)
 {
     auto Time = GetWorld()->GetTimeSeconds();
-    UE_LOG(LogTemp, Warning, TEXT("%f: Projectile fires at %f"), Time, Speed);
 
     ProjectileMovement->SetVelocityInLocalSpace(FVector::ForwardVector * Speed);
     ProjectileMovement->Activate();

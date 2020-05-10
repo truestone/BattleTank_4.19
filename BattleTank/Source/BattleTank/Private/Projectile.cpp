@@ -14,7 +14,11 @@ AProjectile::AProjectile()
     CollisionMesh->SetVisibility(false);
 
     LaunchBlast = CreateDefaultSubobject<UParticleSystemComponent>(FName("Launch Blast"));
-    LaunchBlast->AttachTo(RootComponent);
+    LaunchBlast->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+
+    ImpactBlast = CreateDefaultSubobject<UParticleSystemComponent>(FName("Impact Blast"));
+    ImpactBlast->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+    ImpactBlast->bAutoActivate = false;
 
     ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(
         FName("Projectile Movement"));
@@ -26,6 +30,13 @@ void AProjectile::BeginPlay()
 {
 	Super::BeginPlay();
 	
+    CollisionMesh->OnComponentHit.AddDynamic(this, &AProjectile::OnHit);
+}
+
+void AProjectile::OnHit(UPrimitiveComponent * HitComponent, AActor * OtherActor, UPrimitiveComponent * OtherComp, FVector NormalImpulse, const FHitResult & Hit)
+{
+    LaunchBlast->Deactivate();
+    ImpactBlast->Activate();
 }
 
 // Called every frame

@@ -15,6 +15,9 @@ public:
     virtual float TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent,
         class AController * EventInstigator, AActor * DamageCauser);
 
+    UFUNCTION(BlueprintPure, Category = "Health" )
+    float GetHealthPercent() const;
+
 protected:
     virtual void BeginPlay() override;
 
@@ -23,8 +26,8 @@ private:
 
 private:
     UPROPERTY(EditDefaultsOnly, Category = "Setup")
-    int32 StaringHealth = 100;
+    int32 StartingHealth = 100;
 
     UPROPERTY(VisibleAnywhere, Category = "Health")
-    int32 CurrentHealth = StaringHealth;
+    int32 CurrentHealth = StartingHealth;
 };

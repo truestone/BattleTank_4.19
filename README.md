@@ -81,3 +81,4 @@
 * BT279. Using TakeDamage() on Actors (실습 63: 발사체 피해)
 * BT280. BlueprintPure & Health Bars (실습 64: 헬스 바 구현)
 * BT281. The Observer Pattern (실습 65: 옵저버 패턴)
+* BT282. Finishing Off - Part 1 (실습 66: 헬스 바 버그 및 죽음 처리)

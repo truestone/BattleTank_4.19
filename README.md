@@ -83,3 +83,4 @@
 * BT281. The Observer Pattern (실습 65: 옵저버 패턴)
 * BT282. Finishing Off - Part 1 (실습 66: 헬스 바 버그 및 죽음 처리)
 * BT283. Finishing Off - Part 2 (실습 66: 정리)
+* BT285. Bonus - Switching Cameras (실습 67: 카메라 전환)

@@ -80,3 +80,4 @@
 * BT278. Using GetTimeManager (실습 62: 발사체 메모리 관리)
 * BT279. Using TakeDamage() on Actors (실습 63: 발사체 피해)
 * BT280. BlueprintPure & Health Bars (실습 64: 헬스 바 구현)
+* BT281. The Observer Pattern (실습 65: 옵저버 패턴)

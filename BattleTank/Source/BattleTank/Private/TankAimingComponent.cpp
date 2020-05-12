@@ -94,10 +94,10 @@ int32 UTankAimingComponent::GetRoundsLeft() const
     return RoundsLeft;
 }
 
-void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection)
+void UTankAimingComponent::MoveBarrelTowards(FVector TargetAimDirection)
 {
     auto BarrelRotator = Barrel->GetForwardVector().Rotation();
-    auto AimAsRotator = AimDirection.Rotation();
+    auto AimAsRotator = TargetAimDirection.Rotation();
     auto DeltaRotator = AimAsRotator - BarrelRotator;
 
     Barrel->Elevate(DeltaRotator.Pitch);

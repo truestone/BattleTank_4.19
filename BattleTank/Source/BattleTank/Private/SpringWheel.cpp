@@ -10,21 +10,29 @@ ASpringWheel::ASpringWheel()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+    MassWheelConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(FName("Mass Wheel Constraint"));
+    SetRootComponent(MassWheelConstraint);
+
     Mass = CreateDefaultSubobject<UStaticMeshComponent>(FName("Mass"));
-    SetRootComponent(Mass);
+    Mass->AttachToComponent(MassWheelConstraint, FAttachmentTransformRules::KeepRelativeTransform);
 
     Wheel = CreateDefaultSubobject<UStaticMeshComponent>(FName("Wheel"));
-    Wheel->AttachToComponent(Mass, FAttachmentTransformRules::KeepRelativeTransform);
-
-    MassWheelConstraint = CreateDefaultSubobject<UPhysicsConstraintComponent>(FName("Mass Wheel Constraint"));
-    MassWheelConstraint->AttachToComponent(Mass, FAttachmentTransformRules::KeepRelativeTransform);
+    Wheel->AttachToComponent(MassWheelConstraint, FAttachmentTransformRules::KeepRelativeTransform);
 }
 
 // Called when the game starts or when spawned
 void ASpringWheel::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+    if (GetAttachParentActor())
+    {
+        UE_LOG(LogTemp, Warning, TEXT("SpringWheel: Parent Actor Not Null: %s"), *GetAttachParentActor()->GetName());
+    }
+    else
+    {
+        UE_LOG(LogTemp, Warning, TEXT("SpringWheel: Parent Actor Null"));
+    }
 }
 
 // Called every frame

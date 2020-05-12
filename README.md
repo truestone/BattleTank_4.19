@@ -87,3 +87,4 @@
 * BT289. Creating Physics Constraints (실습 67: 물리 엔진 - 컨스트레인트)
 * BT290. Making Sprints (실습 68: 물리 엔진 - 스프링)
 * BT291. Converting The Spring To C++ (실습 69: 물리 엔진 - C++로 변환)
+* BT292. Attachment, Actors and Component (실습 70: 컴포넌트로서의 액터)

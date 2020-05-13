@@ -91,7 +91,7 @@
 * BT294. Attaching Constraints in C++ (강의 71: C++에서 컨스트레인트 연결)
 * BT295. Chaining Physics Constraints (강의 72: 컨스트레인트와 컨스트레인트 연결)
 * BT296. Applying Wheel Driving Force (강의 73: 바퀴를 이용한 움직임)
-* BT297. Solution: Implement GetWheels()
+* BT297. Solution: Implement GetWheels(강의 73: 바퀴를 이용한 움직임)
 * BT298. Tick Groups And Physics
 * BT299. Tweaking Linear & Angular Damping
 * BT300. BONUS: Fixing Collider Issues

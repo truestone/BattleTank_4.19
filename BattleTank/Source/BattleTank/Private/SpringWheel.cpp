@@ -39,6 +39,11 @@ void ASpringWheel::Tick(float DeltaTime)
 
 }
 
+void ASpringWheel::AddDrivingForce(float ForceMagnitude)
+{
+    Wheel->AddForce(Axle->GetForwardVector() * ForceMagnitude);
+}
+
 void ASpringWheel::SetupConstraint()
 {
     if (!GetAttachParentActor()) return;
